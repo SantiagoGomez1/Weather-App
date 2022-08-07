@@ -9,8 +9,9 @@ export default function Cards({cities, onClose}) {
         <div className={Styles.Cards}>
           {cities.map(c => <Card
               key={c.id}
+              country={c.country}
               max={c.max}
-              min={c.min}
+              humidity={c.humidity}
               name={c.name}
               img={c.img}
               onClose={() => onClose(c.id)}
