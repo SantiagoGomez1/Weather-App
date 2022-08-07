@@ -10,7 +10,7 @@ const Main = () => {
 
   function onSearch(cities) {
     fetch(
-      `http://api.weatherapi.com/v1/current.json?key=${ApiKey}&q=${cities}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=${ApiKey}&q=${cities}&aqi=no`
     )
       .then((response) => response.json())
       .then((recurso) => {
